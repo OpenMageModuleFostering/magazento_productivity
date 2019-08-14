@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <config>
     <tabs>
-        <ip translate="label">
+        <magazento translate="label">
             <label>Magazento.com</label>
             <sort_order>250</sort_order>
-        </ip>
+        </magazento>
     </tabs>
     <sections>
         <productactivity translate="label" module="productactivity">
