@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Ip_Productactivity>
-            <active>false</active>
+            <active>true</active>
             <codePool>community</codePool>
         </Ip_Productactivity>
     </modules>
