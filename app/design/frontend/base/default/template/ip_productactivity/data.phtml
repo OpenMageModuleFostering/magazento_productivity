@@ -1,0 +1,68 @@
+<script type="text/javascript">
+	document.observe('dom:loaded', function() {
+		new Control.Tabs('ip_productactivity');
+	});
+
+</script>
+
+<div class="ip_productactivity_box" id="main-ops-container">
+    <ul id="ip_productactivity" class="subsection_tabs">  
+        <?php if (Mage::getStoreConfig('productactivity/popular/enable')): ?>        
+            <li class="tab first extra-class1 left"><a onclick="return false" href="#mainops1" class="">
+                    <?php echo $this->helper('productactivity/data')->getTitlePopular(); ?></a>
+            </li>
+        <?php endif; ?> 
+            
+        <?php if (Mage::getStoreConfig('productactivity/new/enable')): ?>        
+            <li class="tab first extra-class1 left"><a onclick="return false" href="#mainops2" class="">
+                    <?php echo $this->helper('productactivity/data')->getTitleNew(); ?></a>
+            </li>
+        <?php endif; ?> 
+            
+        <?php if (Mage::getStoreConfig('productactivity/topsell/enable')): ?>        
+            <li class="tab first extra-class1 left"><a onclick="return false" href="#mainops3" class="">
+                    <?php echo $this->helper('productactivity/data')->getTitleTopSell(); ?></a>
+            </li>
+        <?php endif; ?>        
+
+        <?php if (Mage::getStoreConfig('productactivity/toprated/enable')): ?>        
+            <li class="tab first extra-class1 left"><a onclick="return false" href="#mainops4" class="">
+                    <?php echo $this->helper('productactivity/data')->getTitleToprated(); ?></a>
+            </li>
+        <?php endif; ?> 
+        <?php if (Mage::getStoreConfig('productactivity/review/enable')): ?>        
+            <li class="tab first extra-class1 left"><a onclick="return false" href="#mainops5" class="">
+                    <?php echo $this->helper('productactivity/data')->getTitleReview(); ?></a>
+            </li>
+        <?php endif; ?>             
+    </ul>
+    <div>
+        <div id="mainops1" style="">
+            <?php if (Mage::getStoreConfig('productactivity/popular/enable')): ?>
+                <?php echo $this->getLayout()->createBlock('productactivity/popular')->setTemplate('ip_productactivity/popular.phtml')->toHtml(); ?>
+            <?php endif; ?>            
+        </div> 
+        <div id="mainops2" style="">
+            <?php if (Mage::getStoreConfig('productactivity/new/enable')): ?>
+                <?php echo $this->getLayout()->createBlock('productactivity/new')->setTemplate('ip_productactivity/new.phtml')->toHtml(); ?>
+            <?php endif; ?>
+        </div> 
+        <div id="mainops3" style="">
+            <?php if (Mage::getStoreConfig('productactivity/topsell/enable')): ?>
+                <?php echo $this->getLayout()->createBlock('productactivity/topsell')->setTemplate('ip_productactivity/topsell.phtml')->toHtml(); ?>
+            <?php endif; ?>
+        </div> 
+        <div id="mainops4" style="">
+            <?php if (Mage::getStoreConfig('productactivity/toprated/enable')): ?>
+                <?php echo $this->getLayout()->createBlock('productactivity/toprated')->setTemplate('ip_productactivity/toprated.phtml')->toHtml(); ?>
+            <?php endif; ?>
+        </div> 
+        <div id="mainops5" style="">
+            <?php if (Mage::getStoreConfig('productactivity/review/enable')): ?>
+                <?php echo $this->getLayout()->createBlock('productactivity/review')->setTemplate('ip_productactivity/review.phtml')->toHtml(); ?>
+            <?php endif; ?>
+        </div> 
+    </div>
+    <p class="magazento-powered">Powered by <a href="http://www.magazento.com/english/magento-ext/magazento-extensions" target="_blank">Magento modules</a></p>
+</div>
+

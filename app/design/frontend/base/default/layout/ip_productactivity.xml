@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    
+    <default>
+	<reference name="head">
+	    <action method="addCss"><stylesheet>ip_productactivity/style.css</stylesheet></action>
+            <action method="addCss"><stylesheet>ip_productactivity/tabs.css</stylesheet></action>
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>ip_productactivity/livepipe.js</name>
+            </action>                 
+            <action method="addItem">
+                <type>skin_js</type>
+                <name>ip_productactivity/tabs.js</name>
+            </action>                 
+        </reference>
+        <reference name="after_body_start">
+            <block type="productactivity/extra"
+            name="ip_productactivity_extra"
+            before="-"
+            template="ip_productactivity/extra.phtml"/>
+        </reference>
+    </default>
+    
+<!--    default    -->
+    <cms_page>
+        <reference name="content">
+            <block type="core/template"
+            name="magazento_homepage"
+            after="cms.wrapper"
+            template="ip_productactivity/data.phtml"/>
+        </reference>
+    </cms_page>    
+<!--    <default>
+        <reference name="content">
+            <block type="core/template"
+            name="magazento_homepage"
+            template="ip_productactivity/data.phtml"/>
+        </reference>
+    </default>    -->
+    
+    
+<!--    category    -->
+    <catalog_category_default>
+        <reference name="content">
+            <block type="core/template"
+            name="magazento_homepage"
+            after="category.products"
+            template="ip_productactivity/data.phtml"/>
+        </reference>
+    </catalog_category_default>
+    <catalog_category_layered>
+        <reference name="content">
+            <block type="core/template"
+            name="magazento_homepage"
+            after="category.products"
+            template="ip_productactivity/data.phtml"/>
+        </reference>
+    </catalog_category_layered>
+    
+<!--    product    -->
+    <catalog_product_view>
+        <reference name="content">
+            <block type="core/template"
+            name="magazento_homepage"
+            after="product.info"
+            template="ip_productactivity/data.phtml"/>
+        </reference>
+    </catalog_product_view>
+
+    
+    
+</layout>
+
+
+
+
+
