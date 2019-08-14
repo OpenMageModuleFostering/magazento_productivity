@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Magazento_Productivity",
+    "type": "magento-module",
+    "license": "GPL",
+    "homepage": "",
+    "description": "Show best, popular, new reviews and new products and reviews to your customers",
+    "authors": [
+    {
+        "name": "volgodark",
+        "email": "volgodark@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

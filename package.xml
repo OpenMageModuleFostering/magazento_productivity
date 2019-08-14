@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Magazento_Productivity</name>
+    <version>1.0.1</version>
+    <stability>stable</stability>
+    <license>GPL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Show best, popular, new reviews and new products and reviews to your customers</summary>
+    <description>Show best, popular, new reviews and new products and reviews to your customers</description>
+    <notes>Fist stable</notes>
+    <authors><author><name>volgodark</name><user>volgodark</user><email>volgodark@gmail.com</email></author></authors>
+    <date>2012-12-03</date>
+    <time>22:40:58</time>
+    <contents><target name="magecommunity"><dir name="Ip"><dir name="Productactivity"><dir name="Block"><file name="Developer.php" hash="e779bd431338e7f703148338ef02fdc4"/><file name="New.php" hash="c05d663f09f242ef8bbdf04dbf5925a9"/><file name="Popular.php" hash="d296c325bbc3fcd51d839e559e0baa6b"/><file name="Review.php" hash="d79ceddd7d74c6cf77c94e7d04b808bc"/><file name="Toprated.php" hash="413c113f5849eb5b055fc071d3df33c2"/><file name="Topsell.php" hash="a3172ab702d3e7ef2c5844407098cfd9"/></dir><dir name="Helper"><file name="Data.php" hash="ca7d799b81f41b7098e04ce0daefaa8d"/></dir><dir name="Model"><file name="Data.php" hash="0f41804ab583e2fef0eae3e98e7810b4"/></dir><dir name="etc"><file name="config.xml" hash="c1974d781b7e2eae921b158c249cd929"/><file name="system.xml" hash="aacdce560d44c6c8b2bb29176168924d"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><file name="ip_productactivity.xml" hash=""/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ip_Productactivity.xml" hash="8bc75d6951ff272798ae6b97bbbae8c6"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="ip_productactivity"><dir name="img"><file name="all.gif" hash="8a5e2259f5cbf06bdbf303a258be4590"/><file name="drop.gif" hash="1be9ffe42c8d599225596272663e3e06"/><file name="drop.png" hash="4178363d189e1a18093bf7412a0b7808"/><file name="home.png" hash="31fed0cd2dfe3ed662ed92a9cb4af580"/><file name="menu_tabs_sprite.png" hash="16fcb5977b65ca67b0f20008d950afba"/></dir><file name="livepipe.js" hash="3f8ee3a15b811a4a11817f1662599213"/><file name="promo.jpg" hash="8e34bc79c2f2927ce674471e463cddc0"/><file name="style.css" hash="a746f2398f2c450e8f1e62782cd6ece4"/><file name="tabs.css" hash="21d3a70626a48d4e039a774fc66eefd4"/><file name="tabs.js" hash="bbdba6abfaef6a655ef12e61f3eb2f90"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.1</min><max>6.0.0</max></php></required></dependencies>
+</package>

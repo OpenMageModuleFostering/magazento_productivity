@@ -1,0 +1,55 @@
+/* Subsection Tabs
+--------------------*/
+#main-ops-container ul.subsection_tabs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    clear: both;
+    height: 27px;
+    background: white url("img/menu_tabs_sprite.png") repeat-x 0 -156px;
+    border: 1px solid #B6B6B6;
+    border-bottom: 0;
+    }
+
+#main-ops-container ul.subsection_tabs li {
+	float:left;
+	text-align:center;
+	border-right: solid 1px #CDCDCD;
+}
+#main-ops-container ul.subsection_tabs li.last {
+	border-right: 0;
+}
+
+#main-ops-container ul.subsection_tabs li.tab a {
+    display: block;
+    height: 19px;
+    padding: 4px 12px;
+    color: #666;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    }
+
+#main-ops-container ul.subsection_tabs li.tab a:hover {
+	
+}
+#main-ops-container ul.subsection_tabs li.tab a {
+	background: #fff url("img/menu_tabs_sprite.png") no-repeat 0 -156px;
+}
+
+#main-ops-container ul.subsection_tabs li.tab a.active {
+    background: #FAF7EE;
+    font-weight: bold;
+    height: 20px;
+    }
+
+#main-ops-container ul.subsection_tabs li.source_code {
+	float:right;
+}
+
+#main-ops-container a {
+text-decoration: none;
+font-weight: bold;
+color: #2777A1;
+}
